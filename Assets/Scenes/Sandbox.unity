@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 532836526}
   - component: {fileID: 532836525}
   - component: {fileID: 532836524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,6 +707,60 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -3, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -2, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -1, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 1, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 2, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 0
@@ -727,9 +781,9 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 1d4eb2da3d779024a828c090a6dfb03d, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: ade94a9f00b1b6d48ae45af05b9a7059, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: fe0b126b60fb1644cb5f348a919b53d0, type: 2}
@@ -737,7 +791,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 37b6354e1c045214f89f2762cf0e5a97, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 887d6f6e601241945a3d200686cebd90, type: 2}
-  - m_RefCount: 32
+  - m_RefCount: 36
     m_Data: {fileID: 11400000, guid: fb754b8966b83684fbf3336613131440, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: bf136deaf5d461345bf90c9773cfec35, type: 2}
@@ -762,10 +816,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 4057492184055871464, guid: cbf669da05d62d6408689267e204197c,
       type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: -8151809739343590656, guid: cbf669da05d62d6408689267e204197c,
       type: 3}
   - m_RefCount: 1
@@ -777,7 +831,7 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: -2634763343079757682, guid: cbf669da05d62d6408689267e204197c,
       type: 3}
-  - m_RefCount: 32
+  - m_RefCount: 36
     m_Data: {fileID: 8203384205706593396, guid: cbf669da05d62d6408689267e204197c,
       type: 3}
   - m_RefCount: 1
@@ -787,7 +841,7 @@ Tilemap:
     m_Data: {fileID: -4180478380050184196, guid: cbf669da05d62d6408689267e204197c,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 55
+  - m_RefCount: 61
     m_Data:
       e00: 1
       e01: 0
@@ -806,7 +860,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 55
+  - m_RefCount: 61
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0, g: 0, b: 0, a: 0}
@@ -818,7 +872,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -19, y: -12, z: 0}
-  m_Size: {x: 38, y: 16, z: 1}
+  m_Size: {x: 38, y: 17, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -858,6 +912,46 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 532836525}
     m_ColliderPaths:
+    - - X: -19999900
+        Y: 29999959
+      - X: -19999900
+        Y: 39999900
+      - X: -100
+        Y: 39999900
+      - X: -100
+        Y: 39999959
+      - X: -41
+        Y: 39999900
+      - X: 10000041
+        Y: 39999900
+      - X: 10000100
+        Y: 39999959
+      - X: 10000100
+        Y: 39999900
+      - X: 30000041
+        Y: 39999900
+      - X: 30000100
+        Y: 39999959
+      - X: 30000100
+        Y: 50000041
+      - X: 30000041
+        Y: 50000100
+      - X: -20000041
+        Y: 50000100
+      - X: -20000100
+        Y: 50000041
+      - X: -20000100
+        Y: 40000100
+      - X: -30000041
+        Y: 40000100
+      - X: -30000100
+        Y: 40000041
+      - X: -30000100
+        Y: 29999959
+      - X: -30000041
+        Y: 29999900
+      - X: -19999959
+        Y: 29999900
     - - X: -40000000
         Y: 0
       - X: 10000000
@@ -908,6 +1002,14 @@ CompositeCollider2D:
         Y: -40000000
   m_CompositePaths:
     m_Paths:
+    - - {x: -2.00001, y: 4.000019}
+      - {x: 3.00001, y: 4.0000253}
+      - {x: 2.9999747, y: 5.00001}
+      - {x: -2.00001, y: 4.9999747}
+    - - {x: -2.0000253, y: 2.99999}
+      - {x: -2.0000193, y: 4.00001}
+      - {x: -3.00001, y: 3.9999747}
+      - {x: -2.9999747, y: 2.99999}
     - - {x: -4.000029, y: -1}
       - {x: -3.9999704, y: 0}
       - {x: 1, y: 0.000029300001}
@@ -1330,6 +1432,11 @@ PrefabInstance:
     - target: {fileID: -7403742294184554111, guid: b97217d0c8c931444906610147f88349,
         type: 3}
       propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7403742294184554111, guid: b97217d0c8c931444906610147f88349,
+        type: 3}
+      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2595327774719068804, guid: b97217d0c8c931444906610147f88349,
