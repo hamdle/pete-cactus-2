@@ -15,14 +15,16 @@ public class Player : MonoBehaviour
     // Cached component references
     Rigidbody2D playerRigidbody;
     Animator playerAnimator;
-    Collider2D playerCollider;
+    CapsuleCollider2D playerBodyCollider;
+    BoxCollider2D playerFeetCollider;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        playerCollider = GetComponent<Collider2D>();
+        playerBodyCollider = GetComponent<CapsuleCollider2D>();
+        playerFeetCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -45,7 +47,7 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (!playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             return;
         }
