@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     // Config
     [SerializeField] float runSpeed = 7f;
+    [SerializeField] float jumpSpeed = 5f;
 
     // State
     bool isAlive = true;
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Run();
+        Jump();
         FlipSprite();
     }
 
@@ -37,6 +39,15 @@ public class Player : MonoBehaviour
 
         bool playerHasHorizontalSpeed = Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon; // Epsilon == 0
         playerAnimator.SetBool("Running", playerHasHorizontalSpeed);
+    }
+
+    private void Jump()
+    {
+        if (CrossPlatformInputManager.GetButtonDown("Jump"))
+        {
+            Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
+            playerRigidbody.velocity += jumpVelocityToAdd;
+        }
     }
 
     private void FlipSprite()

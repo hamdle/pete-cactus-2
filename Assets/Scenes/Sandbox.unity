@@ -990,6 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 7
+  jumpSpeed: 18
 --- !u!1 &1968461316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -7403742294184554111, guid: b97217d0c8c931444906610147f88349,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2595327774719068804, guid: b97217d0c8c931444906610147f88349,
         type: 3}
