@@ -19,11 +19,20 @@ public class Player : MonoBehaviour
     void Update()
     {
         Run();
+        FlipSprite();
     }
 
     private void Run()
     {
         float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal"); // from -1 to +1
         playerRigidbody.velocity = new Vector2(controlThrow * runSpeed, playerRigidbody.velocity.y);
+    }
+
+    private void FlipSprite()
+    {
+        if (Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon) // Epsilon == 0
+        {
+            transform.localScale = new Vector2(Mathf.Sign(playerRigidbody.velocity.x), 1f);
+        }
     }
 }
