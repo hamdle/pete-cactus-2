@@ -165,10 +165,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -27.00705, y: 9.067074}
-      - {x: -27.00409, y: -20.371643}
-      - {x: 19.562428, y: -20.396465}
-      - {x: 19.37141, y: 9.098697}
+    - - {x: -29.755142, y: 7.182669}
+      - {x: -29.516632, y: -17.780584}
+      - {x: 23.017178, y: -20.867569}
+      - {x: 22.040993, y: 15.065988}
 --- !u!4 &443728163
 Transform:
   m_ObjectHideFlags: 0
@@ -1646,6 +1646,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2595327775486285132}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &843407305 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2595327774719068805, guid: b97217d0c8c931444906610147f88349,
+    type: 3}
+  m_PrefabInstance: {fileID: 2595327775486285132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &843407308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2022,6 +2028,63 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 253737281, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.760812
+      objectReference: {fileID: 0}
+    - target: {fileID: 253737282, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 443728162}
+    - target: {fileID: 253737283, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 843407304}
+    - target: {fileID: 253737283, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_ChildCameras.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_AnimatedTarget
+      value: 
+      objectReference: {fileID: 843407305}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_CustomBlends
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e288bf62b74dc48be21a7296f40568,
+        type: 2}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_Instructions.Array.data[0].m_ActivateAfter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_Instructions.Array.data[1].m_ActivateAfter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473026059582898105, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.2977762
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473026059582898105, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.3438454
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473026059582898110, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: orthographic size
+      value: 6.85
+      objectReference: {fileID: 0}
     - target: {fileID: 3473026059633853732, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_Follow
