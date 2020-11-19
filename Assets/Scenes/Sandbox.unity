@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &253737283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 253737283, guid: 8b53d6dd06c939943aaec2e50babce14,
+    type: 3}
+  m_PrefabInstance: {fileID: 3473026058385870029}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &443728161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,6 +1678,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 7
   jumpSpeed: 18
+--- !u!1 &1663349694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3473026060015599475, guid: 8b53d6dd06c939943aaec2e50babce14,
+    type: 3}
+  m_PrefabInstance: {fileID: 3473026058385870029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1663349698
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663349694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: a3dacaec0287d7444b4bd276816e1666, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0.2
+  m_FrequencyGain: 0.2
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1968461316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +1942,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &2112178665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3473026059633853732, guid: 8b53d6dd06c939943aaec2e50babce14,
+    type: 3}
+  m_PrefabInstance: {fileID: 3473026058385870029}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2595327775486285132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2028,9 +2075,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 253737280, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
+      propertyPath: m_Name
+      value: VirtualCameraRun
+      objectReference: {fileID: 0}
     - target: {fileID: 253737281, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.760812
+      value: 10.760391
       objectReference: {fileID: 0}
     - target: {fileID: 253737282, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
       propertyPath: m_BoundingShape2D
@@ -2042,12 +2093,12 @@ PrefabInstance:
       objectReference: {fileID: 843407304}
     - target: {fileID: 253737283, guid: 8b53d6dd06c939943aaec2e50babce14, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 6.85
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_ChildCameras.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
@@ -2063,38 +2114,68 @@ PrefabInstance:
     - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_Instructions.Array.data[0].m_ActivateAfter
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_Instructions.Array.data[1].m_ActivateAfter
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_Instructions.Array.data[0].m_VirtualCamera
+      value: 
+      objectReference: {fileID: 2112178665}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_Instructions.Array.data[0].m_FullHash
+      value: 466097475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626813649424058486, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_Instructions.Array.data[1].m_VirtualCamera
+      value: 
+      objectReference: {fileID: 253737283}
     - target: {fileID: 3473026059582898105, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2977762
+      value: 2.0365133
       objectReference: {fileID: 0}
     - target: {fileID: 3473026059582898105, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.3438454
+      value: 6.3840094
       objectReference: {fileID: 0}
     - target: {fileID: 3473026059582898110, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: orthographic size
-      value: 6.85
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3473026059633853732, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 843407304}
+    - target: {fileID: 3473026059633853732, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473026059633853733, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.763193
+      objectReference: {fileID: 0}
     - target: {fileID: 3473026059633853735, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 443728162}
+    - target: {fileID: 3473026059633853738, guid: 8b53d6dd06c939943aaec2e50babce14,
+        type: 3}
+      propertyPath: m_Name
+      value: VirtualCameraIdle
+      objectReference: {fileID: 0}
     - target: {fileID: 3473026059802201345, guid: 8b53d6dd06c939943aaec2e50babce14,
         type: 3}
       propertyPath: m_LocalPosition.x
