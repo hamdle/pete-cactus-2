@@ -2623,6 +2623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 7
   jumpSpeed: 18
+  deathThrow: {x: 25, y: 25}
 --- !u!1 &1663349694 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3473026060015599475, guid: 8b53d6dd06c939943aaec2e50babce14,
@@ -3366,6 +3367,11 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 9fc349bc4e334244fa3551e9815cf753, type: 2}
+    - target: {fileID: 9204636273863205839, guid: b97217d0c8c931444906610147f88349,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b97217d0c8c931444906610147f88349, type: 3}
 --- !u!1001 &3473026058385870029

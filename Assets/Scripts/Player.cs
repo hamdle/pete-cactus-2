@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     // Config
     [SerializeField] float runSpeed = 7f;
     [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] Vector2 deathThrow = new Vector2(25f, 25f);
 
     // State
     bool isAlive = true;
@@ -30,9 +31,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isAlive)
+        {
+            return;
+        }
         Run();
         Jump();
         FlipSprite();
+        Die();
     }
 
     private void Run()
@@ -56,6 +62,16 @@ public class Player : MonoBehaviour
         {
             Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
             playerRigidbody.velocity += jumpVelocityToAdd;
+        }
+    }
+
+    private void Die()
+    {
+        if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            isAlive = false;
+            playerAnimator.SetTrigger("Dying");
+            playerRigidbody.velocity = deathThrow;
         }
     }
 
