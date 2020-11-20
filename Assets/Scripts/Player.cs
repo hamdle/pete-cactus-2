@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
         {
             return;
         }
+
         Run();
         Jump();
         FlipSprite();
@@ -69,9 +70,10 @@ public class Player : MonoBehaviour
     {
         if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
-            isAlive = false;
-            playerAnimator.SetTrigger("Dying");
+            //isAlive = false;
+            //playerAnimator.SetTrigger("Dying");
             playerRigidbody.velocity = deathThrow;
+            print("HIT!");
         }
     }
 
