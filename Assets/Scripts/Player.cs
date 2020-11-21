@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
             //isAlive = false;
             //playerAnimator.SetTrigger("Dying");
             playerRigidbody.velocity = deathThrow;
-            print("HIT!");
+            FindObjectOfType<GameSession>().ProcessPlayerHit();
         }
     }
 
